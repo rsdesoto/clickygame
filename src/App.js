@@ -14,6 +14,7 @@ class App extends Component {
   };
 
   /**
+   * Random sort function. Taken from an answer on stack overflow by the community wiki
    * https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array#2450976
    */
   randomizeImg = () => {
