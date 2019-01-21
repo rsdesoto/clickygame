@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./components/Header";
+import Instructions from "./components/Instructions";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header score="0" />
+        <Instructions />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>

@@ -1,0 +1,6 @@
+.InstructionsBox {
+  /* display: flex; */
+  height: 150px;
+  width: 100%;
+  align-content: center;
+}
