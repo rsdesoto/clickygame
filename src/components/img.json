@@ -13,5 +13,20 @@
     "id": 3,
     "name": "Blue",
     "image": "https://placeholder.pics/svg/300x300/598EFF-590FFF"
+  },
+  {
+    "id": 4,
+    "name": "Green",
+    "image": "https://placeholder.pics/svg/300x300/33FF40-9BFF75"
+  },
+  {
+    "id": 5,
+    "name": "Pink",
+    "image": "https://placeholder.pics/svg/300x300/FF4576-FFB0BE"
+  },
+  {
+    "id": 6,
+    "name": "Rosy",
+    "image": "https://placeholder.pics/svg/300x300/CCECFF-FFB0BE"
   }
 ]

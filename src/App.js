@@ -14,6 +14,32 @@ class App extends Component {
   };
 
   /**
+   * https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array#2450976
+   */
+  randomizeImg = () => {
+    let newArr = this.state.imglist;
+    var currentIndex = newArr.length,
+      temporaryValue,
+      randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = newArr[currentIndex];
+      newArr[currentIndex] = newArr[randomIndex];
+      newArr[randomIndex] = temporaryValue;
+    }
+
+    this.setState({
+      imglist: newArr
+    });
+  };
+
+  /**
    * Removes all points and clicked boxes, resetting the game back to its original state
    * imglist: the list of images to click from
    * guessed: the array of clicked IDs
@@ -46,8 +72,11 @@ class App extends Component {
         guessed: currguessed,
         score: score
       });
+
+      this.randomizeImg();
     } else {
       alert("Too bad! You lose!");
+
       this.resetGame();
     }
   };
@@ -63,16 +92,18 @@ class App extends Component {
       <div className="App">
         <Header score={this.state.score} />
         <Instructions />
-        <div className="imgwrap">
-          {this.state.imglist.map(img => (
-            <ImgCard
-              id={img.id}
-              key={img.id}
-              name={img.name}
-              image={img.image}
-              clickBox={this.clickBox}
-            />
-          ))}
+        <div className="contentbackground">
+          <div className="imgwrap">
+            {this.state.imglist.map(img => (
+              <ImgCard
+                id={img.id}
+                key={img.id}
+                name={img.name}
+                image={img.image}
+                clickBox={this.clickBox}
+              />
+            ))}
+          </div>
         </div>
       </div>
     );

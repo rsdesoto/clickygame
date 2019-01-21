@@ -2,9 +2,17 @@
   text-align: center;
 }
 
+.contentbackground {
+  display: flex;
+  justify-content: center;
+  background-color: darkgrey;
+}
+
 .imgwrap {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   background-color: darkgrey;
+  width: 800px;
+  padding: 20px 0;
 }
