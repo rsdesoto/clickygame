@@ -3,7 +3,7 @@ import "./css/Header.css";
 
 function Header(props) {
   return (
-    <div>
+    <div className="headerwrap">
       <header className="Header">
         <div className="Title">
           <h2>Clicky Game</h2>

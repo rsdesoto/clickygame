@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Red",
+    "image": "https://placeholder.pics/svg/300x300/FFB030-FF5B30"
+  },
+  {
+    "id": 2,
+    "name": "Yellow",
+    "image": "https://placeholder.pics/svg/300x300/FDFF7F-ABFF30"
+  },
+  {
+    "id": 3,
+    "name": "Blue",
+    "image": "https://placeholder.pics/svg/300x300/598EFF-590FFF"
+  }
+]
